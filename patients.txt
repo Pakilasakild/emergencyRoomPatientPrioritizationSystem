@@ -1,0 +1,3 @@
+P001;Jonas Jonaitis;41;5;130;91;38.5
+P002;Asta Petrauskienė;76;7;110;96;36.8
+P003;Mantas Žukauskas;18;9;150;89;39.2
