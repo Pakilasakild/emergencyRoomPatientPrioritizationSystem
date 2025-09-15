@@ -15,7 +15,7 @@ public class Main {
             }
 
             summaryGen.summaryWrite("BasicRules", 28, 12.3, 37, 180);
-            servedGen.servedWrite(patients.get(0).getPatientCode, doctors.get(0).getDoctorCode, 8, 12, 27);
+            servedGen.servedWrite(patients.get(0).getPatientCode(), doctors.get(0).getDoctorCode(), 8, 12, 27, "BasicRules");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
