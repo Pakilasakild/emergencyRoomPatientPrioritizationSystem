@@ -1,6 +1,17 @@
 import java.time.LocalTime;
 import java.util.List;
 
+
+
+/*
+ner skirtumo kurie rules, sortint score in arraylist \ queue
+
+
+
+
+
+
+ */
 public class Main {
     public static void main(String[] args) {
         try {
@@ -18,7 +29,7 @@ public class Main {
     }
 
     public static double waitBoostRules(int spO2, int HR, double temp, int arrivalMinute, int age) {
-        return 100 - spO2Penalty(spO2) - HRpenalty(HR) - tempPenalty(temp) - Math.min((LocalTime.now().getMinute() - arrivalMinute) * 0.8, 10) - (age > 75 ? 5 : 0);
+        return 100 - spO2Penalty(spO2) - HRpenalty(HR) - tempPenalty(temp) - Math.min((LocalTime.now().getMinute() - arrivalMinute) * 0.8, 30) - (age > 75 ? 5 : 0);
     }
 
     private static int tempPenalty(double temp) {
