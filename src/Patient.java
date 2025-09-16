@@ -2,19 +2,19 @@ public class Patient {
     private String patientCode;
     private String patientNameSurname;
     private int age;
-    private int urgency;
-    private int height;
-    private int weight;
-    private double BMI;
+    private int arrivalMinute;
+    private int heartRate;
+    private int spO2;
+    private double temperature;
 
-    public Patient(String patientCode, String patientNameSurname, int age, int urgency, int height, int weight, double BMI) {
+    public Patient(String patientCode, String patientNameSurname, int age, int arrivalMinute, int heartRate, int spO2, double temperature) {
         this.patientCode = patientCode;
         this.patientNameSurname = patientNameSurname;
         this.age = age;
-        this.urgency = urgency;
-        this.height = height;
-        this.weight = weight;
-        this.BMI = BMI;
+        this.arrivalMinute = arrivalMinute;
+        this.heartRate = heartRate;
+        this.spO2 = spO2;
+        this.temperature = temperature;
     }
 
     @Override
@@ -23,10 +23,10 @@ public class Patient {
                 "patientCode='" + patientCode + '\'' +
                 ", patientNameSurname='" + patientNameSurname + '\'' +
                 ", age=" + age +
-                ", urgency=" + urgency +
-                ", height=" + height +
-                ", weight=" + weight +
-                ", BMI=" + BMI +
+                ", arrivalMinute=" + arrivalMinute +
+                ", heartRate=" + heartRate +
+                ", spO2=" + spO2 +
+                ", temperature=" + temperature +
                 '}';
     }
 
@@ -54,35 +54,35 @@ public class Patient {
         this.age = age;
     }
 
-    public int getUrgency() {
-        return urgency;
+    public int getarrivalMinute() {
+        return arrivalMinute;
     }
 
-    public void setUrgency(int urgency) {
-        this.urgency = urgency;
+    public void setarrivalMinute(int arrivalMinute) {
+        this.arrivalMinute = arrivalMinute;
     }
 
-    public int getHeight() {
-        return height;
+    public int getheartRate() {
+        return heartRate;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
+    public void setheartRate(int heartRate) {
+        this.heartRate = heartRate;
     }
 
-    public int getWeight() {
-        return weight;
+    public int getspO2() {
+        return spO2;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setspO2(int spO2) {
+        this.spO2 = spO2;
     }
 
-    public double getBMI() {
-        return BMI;
+    public double gettemperature() {
+        return temperature;
     }
 
-    public void setBMI(double BMI) {
-        this.BMI = BMI;
+    public void settemperature(double temperature) {
+        this.temperature = temperature;
     }
 }
