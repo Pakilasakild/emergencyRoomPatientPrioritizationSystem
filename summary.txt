@@ -1,5 +1,5 @@
 Strategija: BasicRules
-Aptarnauta: 28
-Vid. laukimas (min): 12.3
-Maks. laukimas (min): 37.0
-Simuliacijos trukmė (min): 180
+Aptarnauta: 2
+Vid. laukimas (min): 3.0
+Maks. laukimas (min): 5.0
+Simuliacijos trukmė (min): 6

@@ -6,8 +6,9 @@ public class Patient {
     private int heartRate;
     private int spO2;
     private double temperature;
+    private double urgency;
 
-    public Patient(String patientCode, String patientNameSurname, int age, int arrivalMinute, int heartRate, int spO2, double temperature) {
+    public Patient(String patientCode, String patientNameSurname, int age, int arrivalMinute, int heartRate, int spO2, double temperature, double urgency) {
         this.patientCode = patientCode;
         this.patientNameSurname = patientNameSurname;
         this.age = age;
@@ -15,6 +16,15 @@ public class Patient {
         this.heartRate = heartRate;
         this.spO2 = spO2;
         this.temperature = temperature;
+        this.urgency = urgency;
+    }
+
+    public double getUrgency() {
+        return urgency;
+    }
+
+    public void setUrgency(double urgency) {
+        this.urgency = urgency;
     }
 
     @Override

@@ -1,1 +1,2 @@
-P001;D01;8;12;27;BasicRules
+P003;D01;1;9;10;BasicRules
+P001;D03;5;5;10;BasicRules

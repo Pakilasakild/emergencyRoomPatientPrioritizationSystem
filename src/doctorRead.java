@@ -2,11 +2,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class doctorRead {
-    public static List<Doctor> readFile(String file) {
-        List<Doctor> doctors = new ArrayList<>();
+    public static ArrayList<Doctor> readFile(String file) {
+        ArrayList<Doctor> doctors = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
