@@ -13,22 +13,7 @@ public class patientRead {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] patientInfo = line.split(";");
-                patient = new Patient(
-                        patientInfo[0],
-                        patientInfo[1],
-                        Integer.parseInt(patientInfo[2]),
-                        Integer.parseInt(patientInfo[3]),
-                        Integer.parseInt(patientInfo[4]),
-                        Integer.parseInt(patientInfo[5]),
-                        Float.parseFloat(patientInfo[6]),
-                        Main.basicRules(
-                                Integer.parseInt(patientInfo[5]),
-                                Integer.parseInt(patientInfo[4]),
-                                Double.parseDouble(patientInfo[6]),
-                                Integer.parseInt(patientInfo[3]),
-                                Integer.parseInt(patientInfo[2])
-                        )
-                );
+                patient = new Patient(patientInfo[0], patientInfo[1], Integer.parseInt(patientInfo[2]), Integer.parseInt(patientInfo[3]), Integer.parseInt(patientInfo[4]), Integer.parseInt(patientInfo[5]), Float.parseFloat(patientInfo[6]), Main.basicRules(Integer.parseInt(patientInfo[5]), Integer.parseInt(patientInfo[4]), Double.parseDouble(patientInfo[6]), Integer.parseInt(patientInfo[3]), Integer.parseInt(patientInfo[2])));
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -45,22 +30,7 @@ public class patientRead {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] patientInfo = line.split(";");
-                Patient patient = new Patient(
-                        patientInfo[0],
-                        patientInfo[1],
-                        Integer.parseInt(patientInfo[2]),
-                        Integer.parseInt(patientInfo[3]),
-                        Integer.parseInt(patientInfo[4]),
-                        Integer.parseInt(patientInfo[5]),
-                        Float.parseFloat(patientInfo[6]),
-                        Main.basicRules(
-                                Integer.parseInt(patientInfo[5]),
-                                Integer.parseInt(patientInfo[4]),
-                                Double.parseDouble(patientInfo[6]),
-                                Integer.parseInt(patientInfo[3]),
-                                Integer.parseInt(patientInfo[2])
-                        )
-                );
+                Patient patient = new Patient(patientInfo[0], patientInfo[1], Integer.parseInt(patientInfo[2]), Integer.parseInt(patientInfo[3]), Integer.parseInt(patientInfo[4]), Integer.parseInt(patientInfo[5]), Float.parseFloat(patientInfo[6]), Main.basicRules(Integer.parseInt(patientInfo[5]), Integer.parseInt(patientInfo[4]), Double.parseDouble(patientInfo[6]), Integer.parseInt(patientInfo[3]), Integer.parseInt(patientInfo[2])));
                 patients.add(patient);
             }
         } catch (IOException e) {

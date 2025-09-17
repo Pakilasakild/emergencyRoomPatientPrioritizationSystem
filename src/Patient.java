@@ -29,15 +29,7 @@ public class Patient {
 
     @Override
     public String toString() {
-        return "Patient{" +
-                "patientCode='" + patientCode + '\'' +
-                ", patientNameSurname='" + patientNameSurname + '\'' +
-                ", age=" + age +
-                ", arrivalMinute=" + arrivalMinute +
-                ", heartRate=" + heartRate +
-                ", spO2=" + spO2 +
-                ", temperature=" + temperature +
-                '}';
+        return "Patient{" + "patientCode='" + patientCode + '\'' + ", patientNameSurname='" + patientNameSurname + '\'' + ", age=" + age + ", arrivalMinute=" + arrivalMinute + ", heartRate=" + heartRate + ", spO2=" + spO2 + ", temperature=" + temperature + '}';
     }
 
     public String getPatientCode() {

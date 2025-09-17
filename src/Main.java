@@ -1,19 +1,16 @@
 import java.time.LocalTime;
 import java.util.*;
 
-/*
-ner skirtumo kurie rules, sortint score in arraylist \ queue
- */
 public class Main {
     public static void main(String[] args) {
         try {
             ArrayList<Patient> patients = new ArrayList<>(patientRead.readAll("patients.txt"));
-            for(int i = 0; i < patients.size() - 1; i++){
-                for (int j = 0; j < patients.size() - i - 1; j++){
-                    if (patients.get(j).getUrgency() > patients.get(j+1).getUrgency()){
+            for (int i = 0; i < patients.size() - 1; i++) {
+                for (int j = 0; j < patients.size() - i - 1; j++) {
+                    if (patients.get(j).getUrgency() > patients.get(j + 1).getUrgency()) {
                         Patient temp = patients.get(j);
-                        patients.set(j, patients.get(j+1));
-                        patients.set(j+1, temp);
+                        patients.set(j, patients.get(j + 1));
+                        patients.set(j + 1, temp);
                     }
                 }
             }
@@ -29,9 +26,9 @@ public class Main {
             }
             servedGen.servedWrite(served);
             int maxw = -61, lauw = 0;
-            for (Served value : served){
+            for (Served value : served) {
                 lauw += value.getWaitingMinutes();
-                if (value.getWaitingMinutes() > maxw){
+                if (value.getWaitingMinutes() > maxw) {
                     maxw = value.getWaitingMinutes();
                 }
             }

@@ -6,16 +6,18 @@ public class Served {
     private int endMinute;
     private String strat;
 
+    public Served(String patientCode, String doctorCode, int waitingMinutes, int startMinute, int endMinute, String strat) {
+        this.patientCode = patientCode;
+        this.doctorCode = doctorCode;
+        this.waitingMinutes = waitingMinutes;
+        this.startMinute = startMinute;
+        this.endMinute = endMinute;
+        this.strat = strat;
+    }
+
     @Override
     public String toString() {
-        return "Served{" +
-                "patientCode='" + patientCode + '\'' +
-                ", doctorCode='" + doctorCode + '\'' +
-                ", waitingMinutes=" + waitingMinutes +
-                ", startMinute=" + startMinute +
-                ", endMinute=" + endMinute +
-                ", strat='" + strat + '\'' +
-                '}';
+        return "Served{" + "patientCode='" + patientCode + '\'' + ", doctorCode='" + doctorCode + '\'' + ", waitingMinutes=" + waitingMinutes + ", startMinute=" + startMinute + ", endMinute=" + endMinute + ", strat='" + strat + '\'' + '}';
     }
 
     public String getPatientCode() {
@@ -63,15 +65,6 @@ public class Served {
     }
 
     public void setStrat(String strat) {
-        this.strat = strat;
-    }
-
-    public Served(String patientCode, String doctorCode, int waitingMinutes, int startMinute, int endMinute, String strat) {
-        this.patientCode = patientCode;
-        this.doctorCode = doctorCode;
-        this.waitingMinutes = waitingMinutes;
-        this.startMinute = startMinute;
-        this.endMinute = endMinute;
         this.strat = strat;
     }
 }

@@ -3,6 +3,12 @@ public class Doctor {
     private String doctorNameSurname;
     private String doctorWorkplace;
 
+    public Doctor(String doctorCode, String doctorNameSurname, String doctorWorkplace) {
+        this.doctorCode = doctorCode;
+        this.doctorNameSurname = doctorNameSurname;
+        this.doctorWorkplace = doctorWorkplace;
+    }
+
     @Override
     public String toString() {
         return "Doctor{" +
@@ -10,12 +16,6 @@ public class Doctor {
                 ", doctorNameSurname='" + doctorNameSurname + '\'' +
                 ", doctorWorkplace='" + doctorWorkplace + '\'' +
                 '}';
-    }
-
-    public Doctor(String doctorCode, String doctorNameSurname, String doctorWorkplace) {
-        this.doctorCode = doctorCode;
-        this.doctorNameSurname = doctorNameSurname;
-        this.doctorWorkplace = doctorWorkplace;
     }
 
     public String getDoctorCode() {
