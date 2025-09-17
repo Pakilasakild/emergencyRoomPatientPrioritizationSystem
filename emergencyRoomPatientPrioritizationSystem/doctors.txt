@@ -1,3 +1,0 @@
-D01;Gyd. A;Vidaus
-D02;Gyd. B;Skubioji
-D03;Gyd. C;Vidaus
